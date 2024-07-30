@@ -18,7 +18,7 @@ class myThread(Thread):
     def run(self):
         print('Starting %s' %self.name)
         threadLock.acquire()
-        self.printTime(self.name, self.counter, 3)
+        self.printTime(self.name, self.counter, 5)
         threadLock.release()
 
 
